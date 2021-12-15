@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>09-JS-CAL</title>
+    <script>
+
+                function sum_number(n1, n2) {
+            document.getElementById("output").innerHTML = parseInt(n1) + parseInt(n2)
+        }
+                 function Lop_number(n1, n2) {
+            document.getElementById("output").innerHTML = parseInt(n1) - parseInt(n2)
+        }
+                function Kun_number(n1, n2) {
+            document.getElementById("output").innerHTML = parseInt(n1) * parseInt(n2)
+        }
+                 function Han_number(n1, n2) {
+            document.getElementById("output").innerHTML = parseInt(n1) / parseInt(n2)
+        }
+
+    </script>
+
+
+
+</head>
+<body>
+
+    Num1 : <input type="text" name="" id="num1">
+    <br>
+    <br>
+    Num2 : <input type="text" name="" id="num2">
+    <br>
+    <br>
+    <input type="button" value="+" onclick="sum_number(document.getElementById('num1').value,document.getElementById('num2').value)">
+    <input type="button" value="-" onclick="Lop_number(document.getElementById('num1').value,document.getElementById('num2').value)">
+    <input type="button" value="*" onclick="Kun_number(document.getElementById('num1').value,document.getElementById('num2').value)">
+    <input type="button" value="/" onclick="Han_number(document.getElementById('num1').value,document.getElementById('num2').value)">
+
+    <br>
+    <br>
+    Ans <span id="output"> </span></body>
+</html>
